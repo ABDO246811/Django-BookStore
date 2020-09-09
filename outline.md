@@ -1,7 +1,7 @@
 Book:
 	-Titel
-	-Catagory
-	-Auther
+	-category
+	-author
 	-Publisher
 	-price
 	-Description
