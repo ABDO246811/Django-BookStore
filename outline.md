@@ -1,5 +1,6 @@
 Book:
 	-Titel
+	-image
 	-category
 	-author
 	-Publisher
