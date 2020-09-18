@@ -16,9 +16,13 @@ class Publisher(models.Model):
     def __str__(self):
         return self.name
 
+def RenameImage (instance, filename):
+    imagename, extension = filename.split(".")
+    return "books_cover/%s.%s"%(instance.title, extension)
+
 class Book(models.Model):
     title = models.CharField(max_length=100)
-    #image ="ImageField"
+    image = models.ImageField(upload_to=RenameImage)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE)
