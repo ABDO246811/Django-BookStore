@@ -1,276 +1,65 @@
 {% load static %}
 <!doctype html>
-<html class="no-js" lang="">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Product Details || Witter Multipage Responsive Template</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico'%}">
-        <!-- Place favicon.ico in the root directory -->
-        <!-- Google Fonts -->
-		<link href='https://fonts.googleapis.com/css?family=Poppins:400,700,600,500,300' rel='stylesheet' type='text/css'>
 
+        <title>BOOKSTOR</title>
 		<!-- all css here -->
-		<!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
-		<!-- animate css -->
-        <link rel="stylesheet" href="{% static 'css/animate.css'%}">
-		<!-- jquery-ui.min css -->
-        <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css'%}">
-		<!-- meanmenu css -->
-        <link rel="stylesheet" href="{% static 'css/meanmenu.min.css'%}">
-		<!-- Font-Awesome css -->
-        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
-		<!-- pe-icon-7-stroke css -->
-        <link rel="stylesheet" href="{% static 'css/pe-icon-7-stroke.css'%}">
-		<!-- Flaticon css -->
-        <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
-		<!-- venobox css -->
-        <link rel="stylesheet" href="{% static 'venobox/venobox.css' %}" type="text/css" media="screen" />
-		<!-- nivo slider css -->
-		<link rel="stylesheet" href="{% static 'lib/css/nivo-slider.css' %}" type="text/css" />
-		<link rel="stylesheet" href="{% static 'lib/css/preview.css' %}" type="text/css" media="screen" />
-		<!-- owl.carousel css -->
-        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+		<!-- bootstrap v4.5.2 css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<!-- style css -->
 		<link rel="stylesheet" href="{% static 'style.css' %}">
-		<!-- responsive css -->
-        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-		<!-- modernizr css -->
-        <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <!-- Header Area Start -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">Expand at lg</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-        <!-- Add your site or application content here -->
-        <!--Header Area Start-->
-        <div class="header-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-sm-6 col-xs-6">
-                        <div class="header-logo">
-                            <a href="index.html">
-                                <img src="img/logo.png" alt="">
-                            </a>
-                        </div>
+              <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                    <div class="col-md-1 col-sm-6 visible-sm  col-xs-6">
-                        <div class="header-right">
-                            <ul>
-                                <li>
-                                    <a href="account.html"><i class="flaticon-people"></i></a>
-                                </li>
-                                <li class="shoping-cart">
-                                    <a href="#">
-                                        <i class="flaticon-shop"></i>
-                                        <span>2</span>
-                                    </a>
-                                    <div class="add-to-cart-product">
-                                        <div class="cart-product">
-                                            <div class="cart-product-image">
-                                                <a href="single-product.html">
-                                                    <img src="img/shop/1.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="cart-product-info">
-                                                <p>
-                                                    <span>1</span>
-                                                    x
-                                                    <a href="single-product.html">East of eden</a>
-                                                </p>
-                                                <a href="single-product.html">S, Orange</a>
-                                                <span class="cart-price">$ 140.00</span>
-                                            </div>
-                                            <div class="cart-product-remove">
-                                                <i class="fa fa-times"></i>
-                                            </div>
-                                        </div>
-                                        <div class="cart-product">
-                                            <div class="cart-product-image">
-                                                <a href="single-product.html">
-                                                    <img src="img/shop/1.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="cart-product-info">
-                                                <p>
-                                                    <span>1</span>
-                                                    x
-                                                    <a href="single-product.html">East of eden</a>
-                                                </p>
-                                                <a href="single-product.html">S, Orange</a>
-                                                <span class="cart-price">$ 140.00</span>
-                                            </div>
-                                            <div class="cart-product-remove">
-                                                <i class="fa fa-times"></i>
-                                            </div>
-                                        </div>
-                                        <div class="total-cart-price">
-                                            <div class="cart-product-line fast-line">
-                                                <span>Shipping</span>
-                                                <span class="free-shiping">$10.50</span>
-                                            </div>
-                                            <div class="cart-product-line">
-                                                <span>Total</span>
-                                                <span class="total">$ 140.00</span>
-                                            </div>
-                                        </div>
-                                        <div class="cart-checkout">
-                                            <a href="checkout.html">
-                                                Check out
-                                                <i class="fa fa-chevron-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-12 hidden-xs">
-                        <div class="mainmenu text-center">
-                            <nav>
-                                <ul id="nav">
-                                    <li><a href="index.html">HOME</a></li>
-                                    <li><a href="shop.html">FEATURED</a></li>
-                                    <li><a href="shop.html">REVIEW BOOK</a></li>
-                                    <li><a href="about.html">ABOUT AUTHOR</a></li>
-                                    <li><a href="#">pages</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="cart.html">Cart Page</a></li>
-                                            <li><a href="checkout.html">Check Out</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="shop.html">Shopping Page</a></li>
-                                            <li><a href="single-product.html">Single Shop Page</a></li>
-                                            <li><a href="wishlist.html">Wishlist Page</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">CONTACT</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-md-1 hidden-sm">
-                        <div class="header-right">
-                            <ul>
-                                <li>
-                                    <a href="account.html"><i class="flaticon-people"></i></a>
-                                </li>
-                                <li class="shoping-cart">
-                                    <a href="#">
-                                        <i class="flaticon-shop"></i>
-                                        <span>2</span>
-                                    </a>
-                                    <div class="add-to-cart-product">
-                                        <div class="cart-product">
-                                            <div class="cart-product-image">
-                                                <a href="single-product.html">
-                                                    <img src="img/shop/1.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="cart-product-info">
-                                                <p>
-                                                    <span>1</span>
-                                                    x
-                                                    <a href="single-product.html">East of eden</a>
-                                                </p>
-                                                <a href="single-product.html">S, Orange</a>
-                                                <span class="cart-price">$ 140.00</span>
-                                            </div>
-                                            <div class="cart-product-remove">
-                                                <i class="fa fa-times"></i>
-                                            </div>
-                                        </div>
-                                        <div class="cart-product">
-                                            <div class="cart-product-image">
-                                                <a href="single-product.html">
-                                                    <img src="img/shop/1.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="cart-product-info">
-                                                <p>
-                                                    <span>1</span>
-                                                    x
-                                                    <a href="single-product.html">East of eden</a>
-                                                </p>
-                                                <a href="single-product.html">S, Orange</a>
-                                                <span class="cart-price">$ 140.00</span>
-                                            </div>
-                                            <div class="cart-product-remove">
-                                                <i class="fa fa-times"></i>
-                                            </div>
-                                        </div>
-                                        <div class="total-cart-price">
-                                            <div class="cart-product-line fast-line">
-                                                <span>Shipping</span>
-                                                <span class="free-shiping">$10.50</span>
-                                            </div>
-                                            <div class="cart-product-line">
-                                                <span>Total</span>
-                                                <span class="total">$ 140.00</span>
-                                            </div>
-                                        </div>
-                                        <div class="cart-checkout">
-                                            <a href="checkout.html">
-                                                Check out
-                                                <i class="fa fa-chevron-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                  <input class="form-control" type="text" placeholder="Search">
+                </form>
+              </div>
+            </nav>
+        </header>
+        <!-- Header Area End -->
+
+        <!-- Content Area Start -->
+        <div class="container-lg">
+            {% block body %}
+
+            {% endblock body %}
         </div>
-        <!--Header Area End-->
-		<!-- Mobile Menu Start -->
-		<div class="mobile-menu-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="mobile-menu">
-							<nav id="dropdown">
-								<ul>
-                                    <li><a href="index.html">HOME</a></li>
-                                    <li><a href="shop.html">FEATURED</a></li>
-                                    <li><a href="shop.html">REVIEW BOOK</a></li>
-                                    <li><a href="about.html">ABOUT AUTHOR</a></li>
-                                    <li><a href="#">pages</a>
-                                        <ul>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="cart.html">Cart Page</a></li>
-                                            <li><a href="checkout.html">Check Out</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="shop.html">Shopping Page</a></li>
-                                            <li><a href="single-product.html">Single Shop Page</a></li>
-                                            <li><a href="wishlist.html">Wishlist Page</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">CONTACT</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Mobile Menu End -->
 
-        {% block body %}
+        <!-- Content Area End -->
 
-        {% endblock body %}
 
 		<!-- Footer Area Start -->
 		<footer>
@@ -403,37 +192,11 @@
 		    </div>
 		</footer>
 		<!-- Footer Area End -->
+
 		<!-- all js here -->
 		<!-- jquery latest version -->
-        <script src="{% static 'js/vendor/jquery-1.12.0.min.js' %}"></script>
-		<!-- bootstrap js -->
-        <script src="{% static 'js/bootstrap.min.js' %}"></script>
-		<!-- owl.carousel js -->
-        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-		<!-- jquery-ui js -->
-        <script src="{% static 'js/jquery-ui.min.js' %}"></script>
-		<!-- jquery Counterup js -->
-        <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
-        <script src="{% static 'js/waypoints.min.js' %}"></script>
-		<!-- jquery countdown js -->
-        <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
-		<!-- jquery countdown js -->
-        <script type="text/javascript" src="{% static 'venobox/venobox.min.js' %}"></script>
-		<!-- jquery Meanmenu js -->
-        <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
-		<!-- wow js -->
-        <script src="{% static 'js/wow.min.js' %}"></script>
-		<script>
-			new WOW().init();
-		</script>
-		<!-- scrollUp JS -->
-        <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
-		<!-- plugins js -->
-        <script src="{% static 'js/plugins.js' %}"></script>
-		<!-- Nivo slider js -->
-		<script src="{% static 'lib/js/jquery.nivo.slider.js' %}" type="text/javascript"></script>
-		<script src="{% static 'lib/home.js' %}" type="text/javascript"></script>
-		<!-- main js -->
-        <script src="{% static 'js/main.js' %}"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
